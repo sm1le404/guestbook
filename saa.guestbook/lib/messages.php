@@ -26,26 +26,26 @@ class MessagesTable extends DataManager
 				'data_type'    => 'integer',
 				'primary'      => true,
 				'autocomplete' => true,
-				'title'        => Loc::getMessage('STATISTICS_ENTITY_ID_FIELD'),
+				'title'     => 'ID',
 			),
 			'USER_ID'   => array(
 				'data_type' => 'integer',
-				'title'     => Loc::getMessage('STATISTICS_ENTITY_URL_ID_FIELD'),
-                'required'  => false
+                'required'  => false,
+                'title'     => 'USER_ID',
 			),
 			'DATETIME' => array(
 				'data_type' => 'datetime',
 				'required'  => true,
-				'title'     => Loc::getMessage('STATISTICS_ENTITY_DATETIME_FIELD'),
+				'title'     => 'DATETIME',
 			),
 			'TEXT'      => array(
 				'data_type'  => 'string',
-				'title'      => Loc::getMessage('STATISTICS_ENTITY_URL_FIELD'),
+				'title'      => 'TEXT',
                 'required'  => true
 			),
             'FILE'   => array(
                 'data_type' => 'integer',
-                'title'     => Loc::getMessage('STATISTICS_ENTITY_URL_ID_FIELD'),
+                'title'     => 'FILE',
                 'required'  => false
             ),
 		);
